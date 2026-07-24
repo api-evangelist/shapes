@@ -1,0 +1,143 @@
+openapi: 3.0.3
+info:
+  title: Shapes Chat API
+  version: '1.0'
+  description: 'OpenAI-compatible API for Shapes, general-purpose social AI agents (characters) with rich personalities and short-term plus long-term memory. Chat completions run a named Shape as the model (shapesinc/<shape-username>) across 50+ text, image, and voice models. NOTE: the developer API was deprecated on 2025-09-25; Shapes remains available as a consumer product at https://shapes.inc.'
+  contact:
+    name: Shapes, Inc. Support
+    url: https://talk.shapes.inc/support
+  license:
+    name: See repository license
+    url: https://github.com/shapesinc/shapes-api/blob/main/license
+servers:
+- url: https://api.shapes.inc
+  description: Shapes API production host
+tags:
+- name: Chat
+paths:
+  /v1/chat/completions:
+    post:
+      operationId: createChatCompletion
+      summary: Create a chat completion with a Shape
+      description: OpenAI-compatible chat completion. The `model` field selects the Shape as `shapesinc/<shape-username>`. Supports text plus a single `image_url` or `audio_url` content part. Streaming, system messages, message history, and parameter control (e.g. temperature) are not supported; personality and settings come from the Shape's shapes.inc configuration.
+      security:
+      - bearerAuth: []
+      parameters:
+      - name: X-User-Id
+        in: header
+        required: false
+        description: End-user identifier; isolates conversation context and memory per user.
+        schema:
+          type: string
+      - name: X-Channel-Id
+        in: header
+        required: false
+        description: Conversation/channel context identifier for multi-conversation apps.
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChatCompletionRequest'
+      responses:
+        '200':
+          description: OpenAI-compatible chat completion response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChatCompletionResponse'
+        '401':
+          description: Missing or invalid API key.
+        '429':
+          description: Rate limit exceeded (default 20 requests per minute).
+      tags:
+      - Chat
+components:
+  schemas:
+    ChatCompletionRequest:
+      type: object
+      required:
+      - model
+      - messages
+      properties:
+        model:
+          type: string
+          description: Shape model in the form `shapesinc/<shape-username>`.
+          example: shapesinc/tenshi
+        messages:
+          type: array
+          items:
+            $ref: '#/components/schemas/Message'
+    ContentPart:
+      type: object
+      properties:
+        type:
+          type: string
+          enum:
+          - text
+          - image_url
+          - audio_url
+        text:
+          type: string
+        image_url:
+          type: object
+          properties:
+            url:
+              type: string
+              format: uri
+        audio_url:
+          type: object
+          properties:
+            url:
+              type: string
+              format: uri
+    ChatCompletionResponse:
+      type: object
+      description: Standard OpenAI-compatible chat completion object.
+      properties:
+        id:
+          type: string
+        object:
+          type: string
+        created:
+          type: integer
+        model:
+          type: string
+        choices:
+          type: array
+          items:
+            type: object
+            properties:
+              index:
+                type: integer
+              message:
+                $ref: '#/components/schemas/Message'
+              finish_reason:
+                type: string
+    Message:
+      type: object
+      required:
+      - role
+      - content
+      properties:
+        role:
+          type: string
+          enum:
+          - user
+          - assistant
+        content:
+          oneOf:
+          - type: string
+          - type: array
+            items:
+              $ref: '#/components/schemas/ContentPart'
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: 'API key issued at https://shapes.inc/developer, sent as `Authorization: Bearer <API-key>`.'
+externalDocs:
+  description: Shapes API repository (deprecated)
+  url: https://github.com/shapesinc/shapes-api

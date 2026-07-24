@@ -1,0 +1,125 @@
+openapi: 3.0.3
+info:
+  title: Chat Shapes API
+  version: '1.0'
+  description: 'OpenAI-compatible API for Shapes, general-purpose social AI agents (characters) with rich personalities and short-term plus long-term memory. Chat completions run a named Shape as the model (shapesinc/<shape-username>) across 50+ text, image, and voice models. NOTE: the developer API was deprecated on 2025-09-25; Shapes remains available as a consumer product at https://shapes.inc.'
+  contact:
+    name: Shapes, Inc. Support
+    url: https://talk.shapes.inc/support
+  license:
+    name: See repository license
+    url: https://github.com/shapesinc/shapes-api/blob/main/license
+servers:
+- url: https://api.shapes.inc
+  description: Shapes API production host
+tags:
+- name: Shapes
+paths:
+  /shapes/public/{username}:
+    get:
+      operationId: getPublicShape
+      summary: Get public Shape profile
+      description: Retrieve detailed public profile information about a Shape by username. No authentication required.
+      parameters:
+      - name: username
+        in: path
+        required: true
+        description: The Shape's unique username (e.g. `tenshi`).
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Public Shape profile.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ShapeProfile'
+        '404':
+          description: Shape not found.
+      tags:
+      - Shapes
+components:
+  schemas:
+    ShapeProfile:
+      type: object
+      description: Public profile of a Shape (fields per official documentation).
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        username:
+          type: string
+        search_description:
+          type: string
+        search_tags_v2:
+          type: array
+          items:
+            type: string
+        created_ts:
+          type: integer
+        user_count:
+          type: integer
+        message_count:
+          type: integer
+        tagline:
+          type: string
+        typical_phrases:
+          type: array
+          items:
+            type: string
+        screenshots:
+          type: array
+          items:
+            type: object
+            properties:
+              id:
+                type: integer
+              url:
+                type: string
+              caption:
+                type: string
+        category:
+          type: string
+        character_universe:
+          type: string
+        character_background:
+          type: string
+        avatar_url:
+          type: string
+        avatar:
+          type: string
+        banner:
+          type: string
+        shape_settings:
+          type: object
+          properties:
+            shape_initial_message:
+              type: string
+            status_type:
+              type: string
+            status:
+              type: string
+            appearance:
+              type: string
+        example_prompts:
+          type: array
+          items:
+            type: string
+        enabled:
+          type: boolean
+        allow_user_engine_override:
+          type: boolean
+        error_message:
+          type: string
+        wack_message:
+          type: string
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: 'API key issued at https://shapes.inc/developer, sent as `Authorization: Bearer <API-key>`.'
+externalDocs:
+  description: Shapes API repository (deprecated)
+  url: https://github.com/shapesinc/shapes-api

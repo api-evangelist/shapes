@@ -1,0 +1,49 @@
+openapi: 3.0.3
+info:
+  title: Shapes Chat Models API
+  version: '1.0'
+  description: 'OpenAI-compatible API for Shapes, general-purpose social AI agents (characters) with rich personalities and short-term plus long-term memory. Chat completions run a named Shape as the model (shapesinc/<shape-username>) across 50+ text, image, and voice models. NOTE: the developer API was deprecated on 2025-09-25; Shapes remains available as a consumer product at https://shapes.inc.'
+  contact:
+    name: Shapes, Inc. Support
+    url: https://talk.shapes.inc/support
+  license:
+    name: See repository license
+    url: https://github.com/shapesinc/shapes-api/blob/main/license
+servers:
+- url: https://api.shapes.inc
+  description: Shapes API production host
+tags:
+- name: Models
+paths:
+  /v1/models:
+    get:
+      operationId: listModels
+      summary: List available models (Shapes)
+      description: OpenAI-compatible models listing. Requires authentication.
+      security:
+      - bearerAuth: []
+      responses:
+        '200':
+          description: List of available models.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  object:
+                    type: string
+                  data:
+                    type: array
+                    items:
+                      type: object
+      tags:
+      - Models
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: 'API key issued at https://shapes.inc/developer, sent as `Authorization: Bearer <API-key>`.'
+externalDocs:
+  description: Shapes API repository (deprecated)
+  url: https://github.com/shapesinc/shapes-api
