@@ -1,0 +1,45 @@
+generated: '2026-07-21'
+method: derived
+source: openapi/shapes-api-openapi.yml + shapes-api README
+note: >-
+  Cross-cutting standards conformance for the Shapes API. Derived from the documented contract; absence
+  of a claim is recorded as conforms:false with evidence.
+standards:
+- id: openai-chat-completions
+  conforms: true
+  evidence: >-
+    README states the API "follows the OpenAI-compatible API standard"; requests/responses match the
+    OpenAI chat completions contract and work with OpenAI SDKs.
+- id: oauth2
+  conforms: false
+  evidence: Authentication is a static bearer API key, not an OAuth 2.0 authorization flow. (An account-linking "Shapes authorization" exists but is not a documented OAuth2 grant.)
+- id: oidc
+  conforms: false
+  evidence: No OpenID Connect discovery or configuration documents (.well-known/openid-configuration 404).
+- id: rfc9457
+  conforms: false
+  evidence: Errors use OpenAI-style JSON, not application/problem+json.
+- id: idempotency
+  conforms: false
+  evidence: No idempotency keys/headers documented.
+- id: pagination
+  conforms: false
+  evidence: No documented list pagination.
+- id: fhir
+  conforms: false
+  evidence: Not a healthcare API.
+- id: fapi
+  conforms: false
+  evidence: Not a financial-grade API.
+- id: scim
+  conforms: false
+  evidence: No SCIM user provisioning.
+- id: odata
+  conforms: false
+  evidence: Not an OData service.
+- id: psd2
+  conforms: false
+  evidence: Not a payments/banking API.
+- id: json-api
+  conforms: false
+  evidence: Responses follow the OpenAI JSON shape, not the JSON:API media type.

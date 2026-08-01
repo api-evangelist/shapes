@@ -1,9 +1,28 @@
 aid: shapes
 name: Shapes
-description: Shapes is a company surfaced as a portfolio company of lightspeed-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Shapes, Inc. is a social AI platform where humans and AI characters ("Shapes") share the same group
+  chats. Shapes are general-purpose social agents with rich personalities, voice, and short-term plus
+  long-term memory that persists across platforms, running on 50+ free text, image, and voice models.
+  Backed by Lightspeed Venture Partners, the company operates the consumer app at shapes.inc and
+  previously offered an OpenAI-compatible developer API (api.shapes.inc) for building Shapes into any
+  application; that developer API was deprecated on 2025-09-25 and the team has said building with Shapes
+  will return. This profile captures the company identity plus the documented API surface, developer
+  tooling, and security posture for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/shapes/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://shapes.inc/og-image-1200x630.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,12 +31,114 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Artificial Intelligence
+- AI Agents
+- Chat
+- Social
+- Conversational AI
+- LLM
+- Voice
+- Developer API
+common:
+- url: https://shapes.inc
+  type: Website
+- url: https://docs.shapes.inc
+  type: DeveloperPortal
+- url: https://docs.shapes.inc/introduction
+  type: Documentation
+- url: https://github.com/shapesinc/shapes-api
+  type: APIReference
+- url: https://docs.shapes.inc/learninghub
+  type: GettingStarted
+- url: https://talk.shapes.inc/support
+  type: Support
+- url: https://docs.shapes.inc/premium
+  type: Pricing
+- url: https://shapes.inc/developer
+  type: SignUp
+- url: https://github.com/shapesinc
+  type: GitHubOrganization
+- url: https://shapes.inc/tos
+  type: TermsOfService
+- url: https://shapes.inc/privacy
+  type: PrivacyPolicy
+- url: llms/shapes-llms.txt
+  type: LLMsTxt
+- url: packages/shapes-packages.yml
+  type: Packages
+- url: mcp/shapes-mcp.yml
+  type: MCPServer
+- url: well-known/shapes-well-known.yml
+  type: WellKnown
+- url: authentication/shapes-authentication.yml
+  type: Authentication
+- url: conventions/shapes-conventions.yml
+  type: Conventions
+- url: conformance/shapes-conformance.yml
+  type: Conformance
+- url: data-model/shapes-data-model.yml
+  type: DataModel
+- url: lifecycle/shapes-lifecycle.yml
+  type: Lifecycle
+- url: lifecycle/shapes-lifecycle.yml
+  type: Deprecation
+- url: security/shapes-domain-security.yml
+  type: DomainSecurity
+- url: skills/_index.yml
+  type: AgentSkill
+apis:
+- aid: shapes:shapes-chat-api
+  name: Shapes Chat API
+  description: The Chat API from Shapes — 1 operation(s) for chat.
+  humanURL: https://github.com/shapesinc/shapes-api
+  baseURL: https://api.shapes.inc/v1/
+  tags:
+  - Chat
+  properties:
+  - type: OpenAPI
+    url: openapi/shapes-chat-api-openapi.yml
+  - type: Documentation
+    url: https://github.com/shapesinc/shapes-api
+  - type: APIReference
+    url: https://github.com/shapesinc/shapes-api
+- aid: shapes:shapes-models-api
+  name: Shapes Models API
+  description: The Models API from Shapes — 1 operation(s) for models.
+  humanURL: https://github.com/shapesinc/shapes-api
+  baseURL: https://api.shapes.inc/v1/
+  tags:
+  - Models
+  properties:
+  - type: OpenAPI
+    url: openapi/shapes-models-api-openapi.yml
+  - type: Documentation
+    url: https://github.com/shapesinc/shapes-api
+  - type: APIReference
+    url: https://github.com/shapesinc/shapes-api
+- aid: shapes:shapes-shapes-api
+  name: Shapes Shapes API
+  description: The Shapes API from Shapes — 1 operation(s) for shapes.
+  humanURL: https://github.com/shapesinc/shapes-api
+  baseURL: https://api.shapes.inc/v1/
+  tags:
+  - Shapes
+  properties:
+  - type: OpenAPI
+    url: openapi/shapes-shapes-api-openapi.yml
+  - type: Documentation
+    url: https://github.com/shapesinc/shapes-api
+  - type: APIReference
+    url: https://github.com/shapesinc/shapes-api
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 15
+  pass: local-v1

@@ -1,0 +1,60 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/shapesinc/shapes-api (README) + openapi/shapes-api-openapi.yml
+summary: >-
+  Cross-cutting semantics for the Shapes API, an OpenAI-compatible chat API. Grounded in the official
+  repository documentation.
+authentication:
+  style: bearer
+  header: 'Authorization: Bearer <API-key>'
+  env: SHAPESINC_API_KEY
+  see: authentication/shapes-authentication.yml
+compatibility:
+  standard: openai
+  detail: >-
+    Follows the OpenAI chat completions request/response contract; works with existing OpenAI SDKs by
+    setting base_url to https://api.shapes.inc/v1/.
+model_addressing:
+  scheme: shapesinc/<shape-username>
+  detail: The `model` field names the Shape to run rather than a raw model id.
+identity_headers:
+- name: X-User-Id
+  purpose: Per-user identification / memory + context isolation.
+- name: X-Channel-Id
+  purpose: Per-conversation context for multi-conversation apps.
+request_id_tracing:
+  supported: unknown
+  detail: Not documented.
+idempotency:
+  supported: false
+  detail: No idempotency keys or headers are documented.
+pagination:
+  supported: false
+  detail: No list pagination is documented for the public endpoints.
+versioning:
+  style: uri
+  detail: Version segment `/v1/` in the base URL.
+  see: lifecycle/shapes-lifecycle.yml
+rate_limiting:
+  default: 20 requests per minute
+  increase: https://docs.google.com/forms/d/e/1FAIpQLScGLeRk6snViRPslXbbUaMDwubcBhmcJ6opq7wFvPEp-EbO3g/viewform
+  signaling: Not documented (no documented rate-limit response headers).
+error_envelope:
+  shape: openai-compatible
+  problem_json: false
+  detail: Errors returned in standard OpenAI-compatible JSON; RFC 9457 problem+json is not used.
+multimodal:
+  detail: One image_url OR one audio_url per user message; if both are sent only the audio is processed.
+  audio_formats: [mp3, wav, ogg]
+limitations:
+- No system messages (personality comes from Shape configuration).
+- No message history passed by client (relies on Shape memory).
+- No streaming responses.
+- No client parameter control (temperature etc. locked to Shape settings).
+commands:
+- '!reset - reset long-term memory'
+- '!wack - reset short-term memory'
+- '!sleep - generate long-term memory on demand'
+- '!web - search the web'
+- '!imagine - generate images'
+- '!info / !help / !dashboard'

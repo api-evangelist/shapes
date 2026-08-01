@@ -1,0 +1,28 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/shapesinc (org repos) + shapes-api README
+note: >-
+  The Shapes API is OpenAI-compatible and the vendor directs developers to use existing OpenAI client
+  libraries (Python openai, Node openai, .NET OpenAI) rather than a first-party SDK. No first-party
+  client library is published to npm/PyPI/NuGet/Maven. The first-party developer tooling below is
+  distributed from GitHub.
+packages: []
+tools:
+- name: bridge
+  official: true
+  registry: github
+  install: npx github:shapesinc/bridge
+  repo: https://github.com/shapesinc/bridge
+  description: >-
+    Tiny, token-locked local bridge that gives a Shape "hands" on your own computer — run and controlled
+    by you. Effectively a local tool/MCP bridge for Shapes.
+- name: shapes-api
+  official: true
+  registry: github
+  repo: https://github.com/shapesinc/shapes-api
+  description: >-
+    Official toolkit and examples repository for building with Shapes across platforms (Telegram, Slack,
+    Discord, Bluesky, IRC, Twitch, voice, GitHub PR review, and more). Developer API deprecated 2025-09-25.
+third_party_sdks:
+- note: The API works with standard OpenAI SDKs pointed at base_url https://api.shapes.inc/v1/.
+  languages: [python (openai), javascript (openai), csharp (OpenAI)]

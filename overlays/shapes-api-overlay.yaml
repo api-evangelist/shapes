@@ -1,0 +1,32 @@
+# generated: 2026-07-21
+# method: generated
+# source: overlay of openapi/shapes-api-openapi.yml (API Evangelist enrichment)
+overlay: 1.0.0
+info:
+  title: Shapes API - API Evangelist enrichment overlay
+  version: 1.0.0
+extends: ../openapi/shapes-api-openapi.yml
+actions:
+  - target: $.info
+    update:
+      x-apievangelist:
+        provider: shapes
+        backed-by: lightspeed-venture-partners
+        api-status: deprecated
+        deprecated-on: '2025-09-25'
+        openai-compatible: true
+  - target: $.info
+    update:
+      x-lifecycle: lifecycle/shapes-lifecycle.yml
+      x-conventions: conventions/shapes-conventions.yml
+      x-authentication: authentication/shapes-authentication.yml
+  - target: $.paths['/v1/chat/completions'].post
+    update:
+      x-rate-limit:
+        default: 20/min
+      x-idempotent: false
+      x-streaming: false
+  - target: $.paths['/shapes/public/{username}'].get
+    update:
+      x-public: true
+      x-auth-required: false

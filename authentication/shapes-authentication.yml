@@ -1,0 +1,28 @@
+generated: '2026-07-21'
+method: searched
+source: openapi/shapes-api-openapi.yml
+docs: https://github.com/shapesinc/shapes-api
+summary:
+  types:
+  - http
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  description: >-
+    API key generated at https://shapes.inc/developer, sent as the HTTP header
+    `Authorization: Bearer <API-key>`. Also read from the SHAPESINC_API_KEY environment variable in the
+    official examples. By default the API treats the caller as the key owner.
+  sources:
+  - openapi/shapes-api-openapi.yml
+custom_headers:
+- name: X-User-Id
+  purpose: End-user identification; isolates conversation context and Shape memory per user. Strongly recommended for user-facing apps.
+- name: X-Channel-Id
+  purpose: Conversation/channel context for apps that support more than one conversation per user.
+notes:
+  - The public GET /shapes/public/{username} endpoint requires no authentication.
+  - >-
+    Shapes also supports an OAuth-style "Shapes authorization" that links API conversations to a user's
+    shapes.inc account (memory + personas), documented via the shape-auth-example in the repo.
+  - The Shapes developer API was deprecated 2025-09-25; keys may no longer be issued.

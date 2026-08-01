@@ -1,0 +1,33 @@
+generated: '2026-07-21'
+method: derived
+source: openapi/shapes-api-openapi.yml + shapes-api README (tool calling / MCP + bridge)
+status: candidate
+note: >-
+  No official hosted/remote MCP server is published for Shapes. Shapes support tool calling and MCP
+  functionality, and the first-party `bridge` (npx github:shapesinc/bridge) acts as a local, token-locked
+  tool bridge. The tools below are a candidate MCP surface derived from the documented REST operations —
+  they are NOT an official MCP manifest.
+server:
+  name: shapes
+  transport: candidate
+  auth: bearer (Shapes API key)
+related_tooling:
+- name: bridge
+  repo: https://github.com/shapesinc/bridge
+  role: Official local tool/MCP bridge giving a Shape actions on the user's machine.
+tools:
+- name: chat_with_shape
+  from_operation: createChatCompletion
+  method: POST
+  path: /v1/chat/completions
+  description: Send a message (text, image_url, or audio_url) to a Shape and receive its reply.
+- name: get_public_shape
+  from_operation: getPublicShape
+  method: GET
+  path: /shapes/public/{username}
+  description: Retrieve a Shape's public profile by username (no auth required).
+- name: list_models
+  from_operation: listModels
+  method: GET
+  path: /v1/models
+  description: List available models/Shapes for the authenticated key.

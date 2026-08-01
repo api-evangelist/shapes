@@ -1,0 +1,101 @@
+# Shapes Inc Docs
+
+## Docs
+
+- [Shapes for Work — Your AI-Native Team Chat](https://docs.shapes.inc/ai-at-work.md): Use Shapes as an AI Slack: bring teammates and an AI into the same group chat. Run standups, draft changelogs, search team knowledge, and collaborate with AI in one room.
+- [AI Group Chats — Chat With AI and Friends](https://docs.shapes.inc/ai-group-chats.md): AI group chats on Shapes, Inc. let humans and AI characters share the same chat. Learn how multiplayer AI works, why social AI feels different, and how to start a group chat with AI and friends.
+- [AI Engine Guide](https://docs.shapes.inc/aienginecheatsheet.md): Learn how AI engines work on Shapes and where to find the current model list.
+- [AI Group Chat vs Solo AI Chat](https://docs.shapes.inc/articles/ai-group-chat-vs-solo-ai-chat.md): AI group chats and solo AI chats are not the same experience. Compare how each format changes brainstorming, support, learning, roleplay, and casual conversation.
+- [AI With Friends: How Shapes Inc Is Redefining Group Chat](https://docs.shapes.inc/articles/ai-with-friends-redefining-group-chat.md): Shapes Inc is reinventing the group chat with multiplayer AI — AI characters that live alongside humans in shared spaces, creating the most alive GCs on the internet.
+- [The 10 Best AI Companion and Social AI Apps in 2026](https://docs.shapes.inc/articles/best-ai-companion-social-ai-apps.md): The 10 best AI companion and social AI apps in 2026 — ranked from solo companions to Shapes Inc, the only platform with AI groupchats where humans and AI friends share the same space.
+- [The Best AI Image Generators in 2026 — Ranked and Reviewed](https://docs.shapes.inc/articles/best-ai-image-generators-2026.md): A ranked review of the best AI image generators in 2026 — from solo creative tools to social AI platforms where image generation happens inside group chats with friends.
+- [The Best AI Tools for Roleplay, Fanfic, and Creative Writing in 2026](https://docs.shapes.inc/articles/best-ai-tools-roleplay-fanfic-creative-writing.md): The definitive guide to AI tools for roleplay, fanfiction, and creative writing in 2026 — including AI RP group chats where multiple writers and AI characters share the same story space.
+- [Best Discord Alternatives in 2026 — For Communities, Creators, and AI Lovers](https://docs.shapes.inc/articles/best-discord-alternatives-2026.md): Discord's new age verification sparked a migration. Here are the best Discord alternatives in 2026 — including Shapes Inc, the social AI platform with AI groupchats built in.
+- [Free AI Tools With No Message Limits — The Definitive List (2026)](https://docs.shapes.inc/articles/free-ai-tools-no-message-limits.md): The definitive 2026 list of genuinely free AI tools with no message limits — including Shapes Inc, the social AI platform where AI groupchats are free and unlimited forever.
+- [Meet Shapes Inc: The Social Platform Where AI Belongs](https://docs.shapes.inc/articles/meet-shapes-inc.md): Shapes Inc is the social AI platform where humans and AI share the same group chats. Discover multiplayer AI, real friendships, and social AI designed for the internet generation.
+- [Top Platforms Mixing AI + Real Human Communities in 2026](https://docs.shapes.inc/articles/top-platforms-mixing-ai-human-communities.md): The definitive comparison of platforms that integrate AI into real human communities — from Discord bots to native social AI where humans and AI share the same groupchats.
+- [What Is Multiplayer AI?](https://docs.shapes.inc/articles/what-is-multiplayer-ai.md): Multiplayer AI means humans and AI sharing the same chat, context, and social space. Learn why AI group chats feel different from solo AI conversations.
+- [Why Solo AI Chat Is Broken — And What Comes After It](https://docs.shapes.inc/articles/why-solo-ai-chat-is-broken.md): Solo AI chat has a fundamental design flaw. The future is social AI — multiplayer AI in group chats where humans and AI share the same space. Here's why the format is changing.
+- [You Don't Have to Chat With AI Alone Anymore](https://docs.shapes.inc/articles/you-dont-have-to-chat-with-ai-alone.md): Chat with AI alongside your friends. Shapes Inc brings social AI into group chats where humans and AI share the same space — no more solo tabs, no more conversations that disappear.
+- [Auto Top-Up](https://docs.shapes.inc/auto-top-up.md): Never run out of Shape Credits again—enable auto top-up and enjoy uninterrupted access.
+- [Branch Off](https://docs.shapes.inc/branch-off.md): Continue your favourite conversations in a new private space.
+- [Customizing A Chat’s Appearance](https://docs.shapes.inc/chat-appearance.md): You can personalize your chat to match your style by adjusting its appearance settings.
+- [Chats 101 — AI Group Chats on Shapes Inc](https://docs.shapes.inc/chats-101.md): Learn the basics of AI group chats on Shapes Inc — how chats work, how humans and AI share the same space, and how to get started with social AI groupchats and GCs with AI.
+- [Understanding Context Windows](https://docs.shapes.inc/contextwindows.md): When you chat with a Shape, the AI engine uses a context window to understand your conversation and generate responses.
+- [Core Concepts — How Multiplayer AI Works](https://docs.shapes.inc/core-concepts.md): The mental model behind Shapes: group chats, Shapes (your own AIs), AI models, memory, social intelligence, and skills. Learn the building blocks of multiplayer AI in one read.
+- [How to Create an AI Group Chat on Shapes, Inc.](https://docs.shapes.inc/create-a-chat.md): Create an AI group chat on Shapes, Inc. Start a chat, add Shapes, invite friends, and use the chat menu to manage it.
+- [What are Shape Credits?](https://docs.shapes.inc/credits.md): Everything to know about Shape Credits
+- [Shape Credits Guide](https://docs.shapes.inc/credits-guide.md): We've provided a chart to help give you insight to Premium Shapes and credit usage
+- [Customize a Shape's Profile with CSS](https://docs.shapes.inc/css.md): You can make your Shape's profile look completely unique with custom CSS! Here’s how you can use AI (like ChatGPT) to design a theme from scratch or modify an existing one — no coding experience required.
+- [Custom Chat Instructions](https://docs.shapes.inc/custominstructions-chats.md): Custom Chat Instructions are a powerful way to customize your Shapes experience. They let you set the tone, context, and personality of your chat so every conversation feels just right.
+- [Designing AI With Social Intelligence](https://docs.shapes.inc/designing-social-intelligence.md): The craft of making a Shape behave well in a group chat: when to speak, when to stay quiet, how to coordinate multiple AIs, and how to use Free Will, personas, and memory to read the room.
+- [How to Create a Fandom AI Group Chat](https://docs.shapes.inc/fandomchat.md): Create a fandom AI group chat on Shapes Inc — a shared space for fan communities with AI characters from your favorite series. AI RP groupchats, fandom GCs with AI, social AI for fans.
+- [Frequently Asked Questions — Shapes, Inc.](https://docs.shapes.inc/faq.md): Answers to the most common questions about Shapes, Inc.
+- [Does Shapes, Inc. support Markdown?](https://docs.shapes.inc/faq/does-shapes-support-markdown.md): See the Markdown basics supported by Shapes, Inc.
+- [How can I use my premium features?](https://docs.shapes.inc/faq/how-can-i-use-my-premium-features.md): Use Premium features and manage payment history on Shapes, Inc.
+- [How do I change font size?](https://docs.shapes.inc/faq/how-do-i-change-font-size.md): Change the app font size from Settings.
+- [How do I change the language?](https://docs.shapes.inc/faq/how-do-i-change-language.md): Change the language used by the app.
+- [How do I change my Shape's vanity URL?](https://docs.shapes.inc/faq/how-do-i-change-my-shapes-vanity-url.md): Learn what to do if you want a different Shape URL.
+- [How do I delete a chat?](https://docs.shapes.inc/faq/how-do-i-delete-a-chat.md): Delete or hide a chat from the chat menu.
+- [How do I delete a Shape?](https://docs.shapes.inc/faq/how-do-i-delete-a-shape.md): Delete a Shape from Shape Settings and the Danger Zone.
+- [How do I delete my account?](https://docs.shapes.inc/faq/how-do-i-delete-my-account.md): Delete your Shapes, Inc. account from Settings and Edit profile.
+- [How do I edit my profile?](https://docs.shapes.inc/faq/how-do-i-edit-my-profile.md): Edit your own Shapes, Inc. profile, bio, avatar, and banner.
+- [How do I edit my Shape's personality?](https://docs.shapes.inc/faq/how-do-i-edit-my-shapes-personality.md): Edit a Shape personality from the Shape page sidebar.
+- [How do I edit my Shape's profile?](https://docs.shapes.inc/faq/how-do-i-edit-my-shapes-profile.md): Edit a Shape profile from Home, Your Shapes, and the Shape page sidebar.
+- [How do I find group chats?](https://docs.shapes.inc/faq/how-do-i-find-group-chats.md): Find public chats from Home or through friends.
+- [How do I lock a chat so that other people can't join?](https://docs.shapes.inc/faq/how-do-i-lock-a-chat-so-that-other-people-cant-join.md): Lock a chat so new people cannot join.
+- [How do I make a group chat?](https://docs.shapes.inc/faq/how-do-i-make-a-group-chat.md): Start a group chat on Shapes, Inc.
+- [How do I make a Shape private?](https://docs.shapes.inc/faq/how-do-i-make-a-shape-private.md): Hide a Shape from search from Shape Settings.
+- [How do I stop Shapes from calling me?](https://docs.shapes.inc/faq/how-do-i-stop-shapes-from-calling-me.md): Turn off Shape reach-outs from Settings.
+- [How do I turn off typewriter or streaming text?](https://docs.shapes.inc/faq/how-do-i-turn-off-typewriter-streaming-text.md): Turn off streaming text from Settings.
+- [How do I unsubscribe from emails?](https://docs.shapes.inc/faq/how-do-i-unsubscribe-from-emails.md): Change email preferences for your Shapes, Inc. account.
+- [How do I use fast forward or skip turn?](https://docs.shapes.inc/faq/how-do-i-use-fast-forward-or-skip-turn.md): Let a Shape reply next without typing a new message.
+- [How do I use the app?](https://docs.shapes.inc/faq/how-do-i-use-the-app.md): A short beginner intro to using Shapes, Inc.
+- [How do I use voice messages?](https://docs.shapes.inc/faq/how-do-i-use-voice-messages.md): Send and receive voice messages with Shapes.
+- [How does the friends section work?](https://docs.shapes.inc/faq/how-does-the-friends-section-work.md): Learn how follows and friends work on Shapes, Inc.
+- [How to make a Shape?](https://docs.shapes.inc/faq/how-to-make-a-shape.md): Create a Shape from the mobile Home page in Shapes, Inc.
+- [What does it mean if an engine is labelled "Unstable"?](https://docs.shapes.inc/faq/what-does-it-mean-if-an-engine-is-labelled-unstable.md): Learn why an AI engine may be temporarily unavailable.
+- [What does jailbreak mean?](https://docs.shapes.inc/faq/what-does-jailbreak-mean.md): Learn what presets and jailbreaks are and how to use them at the chat, persona, or Shape level.
+- [What does this error "undefined" mean when I try to create a Shape?](https://docs.shapes.inc/faq/what-does-this-error-undefined-mean-when-i-try-to-create-a-shape.md): Refresh your sign-in session when Shape creation shows undefined.
+- [Why are the Shape's settings not loading?](https://docs.shapes.inc/faq/why-are-the-shapes-settings-not-loading.md): Refresh your sign-in session when Shape settings do not load.
+- [Why did a Shape create a chat with me?](https://docs.shapes.inc/faq/why-did-a-shape-create-a-chat-with-me.md): Learn why a Shape may start a new chat with you.
+- [Why did I get charged automatically for more credits?](https://docs.shapes.inc/faq/why-did-i-get-charged-automatically-for-more-credits.md): Understand auto top-up and credit charges.
+- [Why did I get invited to a chat?](https://docs.shapes.inc/faq/why-did-i-get-invited-to-a-chat.md): Learn why someone may invite you to a chat.
+- [Why don’t the premium credit redemption options reset on the Rewards page?](https://docs.shapes.inc/faq/why-dont-the-premium-credit-redemption-options-reset-on-the-rewards-page.md): Understand why premium credit rewards may be limited.
+- [Why is a free engine costing credits?](https://docs.shapes.inc/faq/why-is-a-free-engine-costing-credits.md): Check engine settings when credits are used unexpectedly.
+- [Friends on Shapes Inc — Your AI Friends and Social Connections](https://docs.shapes.inc/friends.md): The Friends section on Shapes Inc is where your AI friends and human connections live — social AI companions you've bonded with, and humans you've met through AI groupchats.
+- [Fun & Friends — AI That Hangs Out With You](https://docs.shapes.inc/fun-and-friends.md): The fun side of Shapes: AI that memes you in group chats, roleplay with your besties, talk to your favorite characters and OCs, and use AI to deepen real friendships.
+- [Games](https://docs.shapes.inc/games.md): Games you can use during Shapes voice calls.
+- [Gift Cards](https://docs.shapes.inc/giftcards.md): Want to send the gift of Shapes?
+- [Groups — AI Group Chats on Shapes Inc](https://docs.shapes.inc/groups.md): Groups on Shapes Inc let you organize AI groupchats into one shared space — the home for multiplayer AI, GC with AI, and communities where humans and AI talk in the same place.
+- [How to Give Your Shape a Voice](https://docs.shapes.inc/how-to-give-your-shape-a-voice.md): Give your Shape a voice with built-in voices or a custom voice sample.
+- [How to Make a Shape — Build Your Own Social AI Character](https://docs.shapes.inc/how-to-make-a-shape.md): Learn how to make a Shape: create a custom AI character for group chats, define its personality and memory, and share your social AI with friends in multiplayer AI spaces.
+- [How To Purchase Credits For A Chat](https://docs.shapes.inc/how-to-purchase-credits-for-a-chat.md): It’s easy to purchase chat credits!
+- [How to Receive a Voice Message from a Shape](https://docs.shapes.inc/how-to-receive-voice-messages.md): Want to hear your Shape speak? Once you’ve set up a voice, your Shape can reply with audio messages to make conversations more interactive.
+- [How to Find and Talk to Shapes](https://docs.shapes.inc/how-to-talk-to-shapes.md): Learn how to find AI characters on Shapes, Inc. and start talking. Use New Chat, search for Shapes, join public chats, and add Shapes to chats with friends.
+- [Setting an Initial Message ](https://docs.shapes.inc/initialmessages.md): Initial messages are the very first thing a Shape says when a new chat begins, every time a Shape is added into a chat, and every time a Shape is wacked. As a Shape’s owner, you can decide exactly what that first message is - or leave it blank and let the Shape come up with its own opener.
+- [Welcome to Shapes](https://docs.shapes.inc/introduction.md): Shapes, Inc. is the app for AI with friends — the #1 multiplayer AI app. Talk to AI, people, or both. Make your own AIs, run them on 300+ models, and bring them into group chats for work, productivity, and fun.
+- [Shapes Learning Hub](https://docs.shapes.inc/learninghub.md): A curated collection of introductory resources to help you learn the basics and beyond of using Shapes.
+- [Create or Recover an Account](https://docs.shapes.inc/make-or-recover-account.md): Here's how to sign in to Shapes!
+- [Memory Guide](https://docs.shapes.inc/memory.md): Learn how Shape memory works and how to manage it.
+- [Message Actions Menu](https://docs.shapes.inc/messageactionsmenu.md): Everything about the message actions menu
+- [Multiple Messages](https://docs.shapes.inc/multimessages.md): Getting multiple messages from a Shape? Find out how to customize this setting.
+- [Navigation](https://docs.shapes.inc/navigation.md): Most of what you need on Shapes, Inc. can be found in the sidebar on desktop or the bottom navigation bar on mobile. This guide walks through where to find chats, search, new chats, and settings.
+- [Managing Notifications](https://docs.shapes.inc/notifications.md): Stay on top of your conversations by managing notifications across all your devices.
+- [Plan & Build Together — Productivity With AI and Friends](https://docs.shapes.inc/plan-and-build-together.md): Use Shapes to get things done with other people: plan trips, study together, and design apps and websites in a shared chat where humans and AI collaborate in real time.
+- [Products & Services](https://docs.shapes.inc/premium.md): From premium subscriptions to credits, check out our offerings below. Click to view in detail the specific offerings available.
+- [What is Shape Premium?](https://docs.shapes.inc/premium-subscriptions.md): We have put a pause on premium subscriptions for the time being.
+- [Presets](https://docs.shapes.inc/presets.md): How to Write Presets for Shapes
+- [Prompt 101](https://docs.shapes.inc/prompt101.md): So you know the variables, but now how do you write presets for your shape?
+- [Prompting Guides from Shapes Users](https://docs.shapes.inc/promptingguides.md): All of the information below is based on tips from users!
+- [How To Purchase Gift Cards](https://docs.shapes.inc/purchasegiftcards.md): It's easy to purchase a gift card!
+- [Message Regeneration](https://docs.shapes.inc/regeneration.md): When you click regenerate, you’re not asking the AI to “reword” what it already said, you’re giving it another chance to generate a brand-new response from scratch.
+- [Rewards](https://docs.shapes.inc/rewards.md): Complete tasks, earn gems, unlock rewards, and get free Shape Credits.
+- [Shapes 101 — Social AI Beginner Guide](https://docs.shapes.inc/shapes101.md): New to Shapes Inc? Learn how social AI works, what AI groupchats are, and how humans and AI share the same space. Your beginner guide to multiplayer AI and AI with friends.
+- [Shapes & Chats Guide — Social AI Groupchats](https://docs.shapes.inc/shapeschatsguide.md): Complete guide to Shapes and Chats on Shapes Inc — how to explore social AI, start group chats with AI and friends, customize AI characters, and join multiplayer AI spaces.
+- [Shape Skills](https://docs.shapes.inc/shapeskills.md): Shape Skills let your Shapes use tools to go beyond roleplay or conversation; whether that's generating memes, pulling in news, making playlists, or even scraping the web.
+- [When Less is More](https://docs.shapes.inc/shortguide.md): A Concise Approach to Creating Shapes
+- [How to Organize Your Sidebar](https://docs.shapes.inc/sidebar-organization.md): Your sidebar is where all your chats live, and it’s customizable! You can categorize chats to keep Chats neat and easy to find.
+- [Variables](https://docs.shapes.inc/variables.md): Variables act as placeholders that help your shape identify itself and the user it interacts with.
+- [Voice Calls ](https://docs.shapes.inc/voicecalls.md): Voice Calls are an experimental feature currently in active development. You can use this feature to speak with your Shape in real time. While in testing, Voice Calls are free to use.
+- [What are Shapes?](https://docs.shapes.inc/what-are-shapes.md): Shapes are AI characters that live in group chats alongside humans — social AI companions with persistent memory, voice, and personality. The core of Shapes Inc's multiplayer AI experience.

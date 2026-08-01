@@ -1,0 +1,18 @@
+{
+  "provider": "shapes",
+  "sources": [
+    "shapes-chat-api-openapi.yml",
+    "shapes-models-api-openapi.yml",
+    "shapes-shapes-api-openapi.yml"
+  ],
+  "outputs": [
+    "shapes-chat-api-openapi.yml",
+    "shapes-models-api-openapi.yml",
+    "shapes-shapes-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

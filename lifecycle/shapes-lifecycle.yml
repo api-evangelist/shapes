@@ -1,0 +1,28 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/shapesinc/shapes-api (README, deprecation notice 2025-09-25) + https://api.shapes.inc/v1/models
+summary: >-
+  The Shapes developer API has been deprecated. The consumer product (shapes.inc) remains fully
+  operational and the team has said the ability to build with Shapes will return.
+versioning:
+  style: uri
+  current: v1
+deprecation:
+  status: deprecated
+  deprecated_on: '2025-09-25'
+  announcement: https://github.com/shapesinc/shapes-api
+  notice: >-
+    "shapes api has been depreciated. you can continue talking with shapes on https://shapes.inc — we
+    will be bringing back ability to build with shapes soon."
+  sunset_headers: not-documented
+  successor: TBA (vendor states building with Shapes will return)
+status_page:
+  found: false
+  detail: No dedicated status page discovered.
+support:
+  url: https://talk.shapes.inc/support
+observations:
+  live_probes:
+  - endpoint: https://api.shapes.inc/v1/models
+    status: 200
+    note: Host still responds (empty model list without an authenticated key).

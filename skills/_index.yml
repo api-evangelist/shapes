@@ -1,0 +1,13 @@
+generated: '2026-07-21'
+method: generated
+source: openapi/shapes-api-openapi.yml (operationIds grounded in the spec)
+note: >-
+  Packaged Agent Skills for the Shapes API, grounded in real operationIds. No provider-published
+  skills/AGENTS.md exists. NOTE: the Shapes developer API was deprecated 2025-09-25.
+skills:
+- file: shapes-chat-with-a-shape.md
+  name: Chat with a Shape
+  operations: [createChatCompletion]
+- file: shapes-lookup-shape-profile.md
+  name: Look up a public Shape profile
+  operations: [getPublicShape]

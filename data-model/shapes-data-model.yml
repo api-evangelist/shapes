@@ -1,0 +1,75 @@
+generated: '2026-07-21'
+method: searched
+source: openapi/shapes-api-openapi.yml + shapes-api README (public Shape profile fields + sample response)
+note: Entity graph derived from the documented API objects.
+entities:
+- name: Shape
+  description: A general-purpose social AI agent/character with personality, voice, and memory.
+  id_field: id
+  id_format: uuid
+  key: username
+  fields:
+  - id
+  - name
+  - username
+  - search_description
+  - search_tags_v2
+  - created_ts
+  - user_count
+  - message_count
+  - tagline
+  - typical_phrases
+  - screenshots
+  - category
+  - character_universe
+  - character_background
+  - avatar_url
+  - avatar
+  - banner
+  - shape_settings
+  - example_prompts
+  - enabled
+  - allow_user_engine_override
+- name: ShapeSettings
+  description: Per-Shape configuration embedded in a Shape profile.
+  fields:
+  - shape_initial_message
+  - status_type
+  - status
+  - appearance
+- name: Screenshot
+  description: Example conversation screenshot attached to a Shape.
+  fields:
+  - id
+  - url
+  - caption
+- name: ChatCompletion
+  description: OpenAI-compatible completion produced by running a Shape as the model.
+  fields:
+  - id
+  - object
+  - created
+  - model
+  - choices
+- name: Message
+  description: A chat message (text or multimodal content parts).
+  fields:
+  - role
+  - content
+relationships:
+- from: Shape
+  to: ShapeSettings
+  type: has_one
+  via: shape_settings
+- from: Shape
+  to: Screenshot
+  type: has_many
+  via: screenshots
+- from: ChatCompletion
+  to: Shape
+  type: belongs_to
+  via: model
+- from: ChatCompletion
+  to: Message
+  type: has_many
+  via: choices[].message
