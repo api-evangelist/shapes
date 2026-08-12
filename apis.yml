@@ -43,6 +43,8 @@ tags:
 - Voice
 - Developer API
 common:
+- type: Overlay
+  url: overlays/shapes-api-overlay.yaml
 - url: https://shapes.inc
   type: Website
 - url: https://docs.shapes.inc
