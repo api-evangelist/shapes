@@ -1,0 +1,161 @@
+{
+  "item": [
+    {
+      "id": "63395361-81b7-493f-9461-99c6eb1bfee5",
+      "name": "Shapes",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "f879c395-37b5-4d84-b682-5bc294e7090c",
+          "name": "Get public Shape profile",
+          "request": {
+            "name": "Get public Shape profile",
+            "description": {
+              "content": "Retrieve detailed public profile information about a Shape by username. No authentication required.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "shapes",
+                "public",
+                ":username"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "username",
+                  "description": "(Required) The Shape's unique username (e.g. `tenshi`)."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "990ef0b0-b110-41b2-b58b-00d65124a349",
+              "name": "Public Shape profile.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "shapes",
+                    "public",
+                    ":username"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "username",
+                      "description": "(Required) The Shape's unique username (e.g. `tenshi`)."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"74a6185b-cbef-c79c-b766-f642e7f9b54c\",\n  \"name\": \"string\",\n  \"username\": \"string\",\n  \"search_description\": \"string\",\n  \"search_tags_v2\": [\n    \"string\",\n    \"string\"\n  ],\n  \"created_ts\": 8401,\n  \"user_count\": 2183,\n  \"message_count\": 7801,\n  \"tagline\": \"string\",\n  \"typical_phrases\": [\n    \"string\",\n    \"string\"\n  ],\n  \"screenshots\": [\n    {\n      \"id\": 5627,\n      \"url\": \"string\",\n      \"caption\": \"string\"\n    },\n    {\n      \"id\": 6623,\n      \"url\": \"string\",\n      \"caption\": \"string\"\n    }\n  ],\n  \"category\": \"string\",\n  \"character_universe\": \"string\",\n  \"character_background\": \"string\",\n  \"avatar_url\": \"string\",\n  \"avatar\": \"string\",\n  \"banner\": \"string\",\n  \"shape_settings\": {\n    \"shape_initial_message\": \"string\",\n    \"status_type\": \"string\",\n    \"status\": \"string\",\n    \"appearance\": \"string\"\n  },\n  \"example_prompts\": [\n    \"string\",\n    \"string\"\n  ],\n  \"enabled\": false,\n  \"allow_user_engine_override\": true,\n  \"error_message\": \"string\",\n  \"wack_message\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b93d2bd8-96a1-4dbc-b5a5-498c5db51df3",
+              "name": "Shape not found.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "shapes",
+                    "public",
+                    ":username"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "username",
+                      "description": "(Required) The Shape's unique username (e.g. `tenshi`)."
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.shapes.inc",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "a5a46d7e-dab6-43f5-9c53-5c8864f754b5",
+    "name": "Chat Shapes API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "OpenAI-compatible API for Shapes, general-purpose social AI agents (characters) with rich personalities and short-term plus long-term memory. Chat completions run a named Shape as the model (shapesinc/<shape-username>) across 50+ text, image, and voice models. NOTE: the developer API was deprecated on 2025-09-25; Shapes remains available as a consumer product at https://shapes.inc.\n\nContact Support:\n Name: Shapes, Inc. Support",
+      "type": "text/plain"
+    }
+  }
+}

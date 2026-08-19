@@ -2,11 +2,10 @@ generated: '2026-07-21'
 method: derived
 source: openapi/shapes-api-openapi.yml + shapes-api README (tool calling / MCP + bridge)
 status: candidate
-note: >-
-  No official hosted/remote MCP server is published for Shapes. Shapes support tool calling and MCP
+note: No official hosted/remote MCP server is published for Shapes. Shapes support tool calling and MCP
   functionality, and the first-party `bridge` (npx github:shapesinc/bridge) acts as a local, token-locked
-  tool bridge. The tools below are a candidate MCP surface derived from the documented REST operations —
-  they are NOT an official MCP manifest.
+  tool bridge. The tools below are a candidate MCP surface derived from the documented REST operations
+  — they are NOT an official MCP manifest.
 server:
   name: shapes
   transport: candidate
@@ -31,3 +30,9 @@ tools:
   method: GET
   path: /v1/models
   description: List available models/Shapes for the authenticated key.
+deployment:
+  mode: none
+  verified: derived
+  tools: 3
+  checked: '2026-08-12'
+  source: catalog MCP census

@@ -1,0 +1,37 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Chat Shapes API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Shapes",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get public Shape profile",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.shapes.inc/shapes/public/:username",
+            "params": [
+              {
+                "name": "username",
+                "value": "",
+                "type": "path",
+                "description": "The Shape's unique username (e.g. `tenshi`)."
+              }
+            ]
+          },
+          "docs": "Retrieve detailed public profile information about a Shape by username. No authentication required."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

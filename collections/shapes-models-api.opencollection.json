@@ -1,0 +1,33 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Shapes Chat Models API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Models",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List available models (Shapes)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.shapes.inc/v1/models",
+            "auth": {
+              "type": "bearer",
+              "token": "{{bearerToken}}"
+            }
+          },
+          "docs": "OpenAI-compatible models listing. Requires authentication."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
