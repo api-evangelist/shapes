@@ -1,14 +1,13 @@
 aid: shapes
 name: Shapes
-description: >-
-  Shapes, Inc. is a social AI platform where humans and AI characters ("Shapes") share the same group
-  chats. Shapes are general-purpose social agents with rich personalities, voice, and short-term plus
-  long-term memory that persists across platforms, running on 50+ free text, image, and voice models.
-  Backed by Lightspeed Venture Partners, the company operates the consumer app at shapes.inc and
-  previously offered an OpenAI-compatible developer API (api.shapes.inc) for building Shapes into any
-  application; that developer API was deprecated on 2025-09-25 and the team has said building with Shapes
-  will return. This profile captures the company identity plus the documented API surface, developer
-  tooling, and security posture for the API Evangelist network.
+description: Shapes, Inc. is a social AI platform where humans and AI characters ("Shapes") share the
+  same group chats. Shapes are general-purpose social agents with rich personalities, voice, and short-term
+  plus long-term memory that persists across platforms, running on 50+ free text, image, and voice models.
+  Backed by Lightspeed Venture Partners, the company operates the consumer app at shapes.inc and previously
+  offered an OpenAI-compatible developer API (api.shapes.inc) for building Shapes into any application;
+  that developer API was deprecated on 2025-09-25 and the team has said building with Shapes will return.
+  This profile captures the company identity plus the documented API surface, developer tooling, and security
+  posture for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/shapes/refs/heads/main/apis.yml
 deliveryModel:
   model: saas
@@ -44,7 +43,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-09-16'
 tags:
 - Company
 - Artificial Intelligence
@@ -134,7 +133,7 @@ apis:
   - type: APIReference
     url: https://github.com/shapesinc/shapes-api
 - aid: shapes:shapes-shapes-api
-  name: Shapes Shapes API
+  name: Shapes API
   description: The Shapes API from Shapes — 1 operation(s) for shapes.
   humanURL: https://github.com/shapesinc/shapes-api
   baseURL: https://api.shapes.inc/v1/
