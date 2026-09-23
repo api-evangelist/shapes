@@ -1,8 +1,8 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
-  title: Shapes Chat Models API
+  title: Shapes Models API
   version: '1.0'
-  description: 'OpenAI-compatible API for Shapes, general-purpose social AI agents (characters) with rich personalities and short-term plus long-term memory. Chat completions run a named Shape as the model (shapesinc/<shape-username>) across 50+ text, image, and voice models. NOTE: the developer API was deprecated on 2025-09-25; Shapes remains available as a consumer product at https://shapes.inc.'
+  description: 'OpenAI-compatible API for Shapes, general-purpose social AI agents (characters) with rich personalities and short-term plus long-term memory. Chat completions run a named Shape as the model (shapesinc/) across 50+ text, image, and voice models. NOTE: the developer API was deprecated on 2025-09-25; Shapes remains available as a consumer product at https://shapes.inc.'
   contact:
     name: Shapes, Inc. Support
     url: https://talk.shapes.inc/support

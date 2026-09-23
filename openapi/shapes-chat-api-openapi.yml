@@ -1,8 +1,8 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
   title: Shapes Chat API
   version: '1.0'
-  description: 'OpenAI-compatible API for Shapes, general-purpose social AI agents (characters) with rich personalities and short-term plus long-term memory. Chat completions run a named Shape as the model (shapesinc/<shape-username>) across 50+ text, image, and voice models. NOTE: the developer API was deprecated on 2025-09-25; Shapes remains available as a consumer product at https://shapes.inc.'
+  description: 'OpenAI-compatible API for Shapes, general-purpose social AI agents (characters) with rich personalities and short-term plus long-term memory. Chat completions run a named Shape as the model (shapesinc/) across 50+ text, image, and voice models. NOTE: the developer API was deprecated on 2025-09-25; Shapes remains available as a consumer product at https://shapes.inc.'
   contact:
     name: Shapes, Inc. Support
     url: https://talk.shapes.inc/support
@@ -19,7 +19,7 @@ paths:
     post:
       operationId: createChatCompletion
       summary: Create a chat completion with a Shape
-      description: OpenAI-compatible chat completion. The `model` field selects the Shape as `shapesinc/<shape-username>`. Supports text plus a single `image_url` or `audio_url` content part. Streaming, system messages, message history, and parameter control (e.g. temperature) are not supported; personality and settings come from the Shape's shapes.inc configuration.
+      description: OpenAI-compatible chat completion. The `model` field selects the Shape as `shapesinc/`. Supports text plus a single `image_url` or `audio_url` content part. Streaming, system messages, message history, and parameter control (e.g. temperature) are not supported; personality and settings come from the Shape's shapes.inc configuration.
       security:
       - bearerAuth: []
       parameters:
@@ -56,43 +56,6 @@ paths:
       - Chat
 components:
   schemas:
-    ChatCompletionRequest:
-      type: object
-      required:
-      - model
-      - messages
-      properties:
-        model:
-          type: string
-          description: Shape model in the form `shapesinc/<shape-username>`.
-          example: shapesinc/tenshi
-        messages:
-          type: array
-          items:
-            $ref: '#/components/schemas/Message'
-    ContentPart:
-      type: object
-      properties:
-        type:
-          type: string
-          enum:
-          - text
-          - image_url
-          - audio_url
-        text:
-          type: string
-        image_url:
-          type: object
-          properties:
-            url:
-              type: string
-              format: uri
-        audio_url:
-          type: object
-          properties:
-            url:
-              type: string
-              format: uri
     ChatCompletionResponse:
       type: object
       description: Standard OpenAI-compatible chat completion object.
@@ -116,6 +79,43 @@ components:
                 $ref: '#/components/schemas/Message'
               finish_reason:
                 type: string
+    ContentPart:
+      type: object
+      properties:
+        type:
+          type: string
+          enum:
+          - text
+          - image_url
+          - audio_url
+        text:
+          type: string
+        image_url:
+          type: object
+          properties:
+            url:
+              type: string
+              format: uri
+        audio_url:
+          type: object
+          properties:
+            url:
+              type: string
+              format: uri
+    ChatCompletionRequest:
+      type: object
+      required:
+      - model
+      - messages
+      properties:
+        model:
+          type: string
+          description: Shape model in the form `shapesinc/<shape-username>`.
+          example: shapesinc/tenshi
+        messages:
+          type: array
+          items:
+            $ref: '#/components/schemas/Message'
     Message:
       type: object
       required:
