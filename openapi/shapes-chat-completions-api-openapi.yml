@@ -13,7 +13,7 @@ servers:
 - url: https://api.shapes.inc
   description: Shapes API production host
 tags:
-- name: Chat
+- name: Chat Completions
 paths:
   /v1/chat/completions:
     post:
@@ -53,32 +53,9 @@ paths:
         '429':
           description: Rate limit exceeded (default 20 requests per minute).
       tags:
-      - Chat
+      - Chat Completions
 components:
   schemas:
-    ChatCompletionResponse:
-      type: object
-      description: Standard OpenAI-compatible chat completion object.
-      properties:
-        id:
-          type: string
-        object:
-          type: string
-        created:
-          type: integer
-        model:
-          type: string
-        choices:
-          type: array
-          items:
-            type: object
-            properties:
-              index:
-                type: integer
-              message:
-                $ref: '#/components/schemas/Message'
-              finish_reason:
-                type: string
     ContentPart:
       type: object
       properties:
@@ -102,20 +79,6 @@ components:
             url:
               type: string
               format: uri
-    ChatCompletionRequest:
-      type: object
-      required:
-      - model
-      - messages
-      properties:
-        model:
-          type: string
-          description: Shape model in the form `shapesinc/<shape-username>`.
-          example: shapesinc/tenshi
-        messages:
-          type: array
-          items:
-            $ref: '#/components/schemas/Message'
     Message:
       type: object
       required:
@@ -133,6 +96,43 @@ components:
           - type: array
             items:
               $ref: '#/components/schemas/ContentPart'
+    ChatCompletionRequest:
+      type: object
+      required:
+      - model
+      - messages
+      properties:
+        model:
+          type: string
+          description: Shape model in the form `shapesinc/<shape-username>`.
+          example: shapesinc/tenshi
+        messages:
+          type: array
+          items:
+            $ref: '#/components/schemas/Message'
+    ChatCompletionResponse:
+      type: object
+      description: Standard OpenAI-compatible chat completion object.
+      properties:
+        id:
+          type: string
+        object:
+          type: string
+        created:
+          type: integer
+        model:
+          type: string
+        choices:
+          type: array
+          items:
+            type: object
+            properties:
+              index:
+                type: integer
+              message:
+                $ref: '#/components/schemas/Message'
+              finish_reason:
+                type: string
   securitySchemes:
     bearerAuth:
       type: http

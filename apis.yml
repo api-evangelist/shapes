@@ -104,20 +104,6 @@ common:
 - url: skills/_index.yml
   type: AgentSkill
 apis:
-- aid: shapes:shapes-chat-api
-  name: Shapes Chat API
-  description: The Chat API from Shapes — 1 operation(s) for chat.
-  humanURL: https://github.com/shapesinc/shapes-api
-  baseURL: https://api.shapes.inc/v1/
-  tags:
-  - Chat
-  properties:
-  - type: OpenAPI
-    url: openapi/shapes-chat-api-openapi.yml
-  - type: Documentation
-    url: https://github.com/shapesinc/shapes-api
-  - type: APIReference
-    url: https://github.com/shapesinc/shapes-api
 - aid: shapes:shapes-models-api
   name: Shapes Models API
   description: The Models API from Shapes — 1 operation(s) for models.
@@ -142,6 +128,20 @@ apis:
   properties:
   - type: OpenAPI
     url: openapi/shapes-shapes-api-openapi.yml
+  - type: Documentation
+    url: https://github.com/shapesinc/shapes-api
+  - type: APIReference
+    url: https://github.com/shapesinc/shapes-api
+- aid: shapes:shapes-chat-completions-api
+  name: Shapes Chat Completions API
+  description: The Chat Completions API from Shapes — 1 operation(s) for chat completions.
+  humanURL: https://github.com/shapesinc/shapes-api
+  baseURL: https://api.shapes.inc/v1/
+  tags:
+  - Chat Completions
+  properties:
+  - type: OpenAPI
+    url: openapi/shapes-chat-completions-api-openapi.yml
   - type: Documentation
     url: https://github.com/shapesinc/shapes-api
   - type: APIReference
