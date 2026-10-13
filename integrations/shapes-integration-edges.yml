@@ -1,0 +1,23 @@
+edges:
+- partner_name: OpenAI
+  partner: openai
+  partner_match: domain
+  type: contract
+  channel: provider-built
+  relationship: compatible
+  direction: provider-built
+  evidence: https://github.com/api-evangelist/shapes/blob/main/openapi/shapes-chat-completions-api-openapi.yml#L5
+  contract_reference:
+    repo: shapes
+    spec_file: shapes-chat-completions-api-openapi.yml
+    property: description
+    value: OpenAI-compatible
+    note: 'shapes declares OpenAI compatibility: ''description: ''OpenAI-compatible API for Shapes, general-purpose
+      social AI agents (characters) with rich personalities and short-term plus long-term memory. Chat'''
+    detected_by: sweep-model-routing.py
+    detected: '2026-10-13'
+  detected_by: sweep-model-routing.py
+  first_seen: '2026-10-13'
+generated: '2026-10-13'
+method: searched
+checked: []
