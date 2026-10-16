@@ -15,7 +15,7 @@ edges:
     note: 'shapes declares OpenAI compatibility: ''description: ''OpenAI-compatible API for Shapes, general-purpose
       social AI agents (characters) with rich personalities and short-term plus long-term memory. Chat'''
     detected_by: sweep-model-routing.py
-    detected: '2026-10-13'
+    detected: '2026-10-15'
   detected_by: sweep-model-routing.py
   first_seen: '2026-10-13'
 generated: '2026-10-13'
