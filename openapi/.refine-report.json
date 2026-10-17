@@ -8,7 +8,9 @@
     "shapes-models-api-openapi.yml",
     "shapes-shapes-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
   "errors": [],
   "warnings": [],
   "notes": [
@@ -20,10 +22,11 @@
     "shapes-api-openapi.yml: declared missing tag: Chat",
     "shapes-api-openapi.yml: declared missing tag: Models",
     "shapes-api-openapi.yml: declared missing tag: Shapes",
-    "apis.yml register: already-registered"
+    "superseded outputs removed: shapes-chat-completions-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 3 total)"
   ],
   "skipped": [
-    "shapes-chat-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "shapes-chat-completions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "shapes-models-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "shapes-shapes-api-openapi.yml: previously refined output, superseded by openapi/_original/"
   ]

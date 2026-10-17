@@ -56,6 +56,20 @@ paths:
       - Chat Completions
 components:
   schemas:
+    ChatCompletionRequest:
+      type: object
+      required:
+      - model
+      - messages
+      properties:
+        model:
+          type: string
+          description: Shape model in the form `shapesinc/<shape-username>`.
+          example: shapesinc/tenshi
+        messages:
+          type: array
+          items:
+            $ref: '#/components/schemas/Message'
     ContentPart:
       type: object
       properties:
@@ -96,20 +110,6 @@ components:
           - type: array
             items:
               $ref: '#/components/schemas/ContentPart'
-    ChatCompletionRequest:
-      type: object
-      required:
-      - model
-      - messages
-      properties:
-        model:
-          type: string
-          description: Shape model in the form `shapesinc/<shape-username>`.
-          example: shapesinc/tenshi
-        messages:
-          type: array
-          items:
-            $ref: '#/components/schemas/Message'
     ChatCompletionResponse:
       type: object
       description: Standard OpenAI-compatible chat completion object.
